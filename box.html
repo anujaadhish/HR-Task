@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 350px;
+        height: 60px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        border: 1px solid rgb(234, 232, 232);
+      }
+      .expanded {
+        width: 350px;
+        height: 200px;
+        overflow: visible; 
+        border:2px solid red;
+        background-color:#f99dad;
+
+
+
+      }
+      .expand-button {
+        cursor: pointer;
+      }
+      h2{
+        color: #ff6b83;
+      }
+      .text-space{
+        padding: 100px;
+      }
+      .text-size{
+        font-size: 20px;
+      }
+      .box1 {
+        width: 350px;
+        height: 60px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        border: 1px solid rgb(234, 232, 232);
+
+      }
+      .expanded2 {
+        width: 350px;
+        height: 200px;
+        overflow: visible; 
+        border:2px solid red;
+        background-color:#f99dad;
+
+
+      }
+      .expand-button {
+        cursor: pointer;
+      }
+      h2{
+        color: #ff6b83;
+      }
+      .text-space{
+        padding: 100px;
+      }
+      .text-size1{
+        font-size: 20px;
+      }
+      .box2 {
+        width: 500px;
+        height: 60px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        border: 1px solid rgb(234, 232, 232);
+
+      }
+      .expanded3 {
+        width: 350px;
+        height: 200px;
+        overflow: visible; 
+        border:2px solid red;
+        background-color:#f99dad;
+
+
+
+      }
+      .expand-button {
+        cursor: pointer;
+      }
+      h2{
+        color: #ff6b83;
+      }
+      .text-space{
+        padding: 100px;
+      }
+      .text-size2{
+        font-size: 20px;
+      }
+      h3{
+        color: #ff6b83;
+      }
+      .color{
+        color:black;
+      }
+      .button-widith{
+        width: 300px;
+        height: 40px;
+        color:white;
+        background-color: #ff6b83;
+        border: none;
+
+      }
+      .discount-box {
+    /* position: absolute; */
+    top: 1px;
+    right: 1px;
+    background-color: #ff7a91;
+    /* padding: 5px 10px; */
+    /* border-radius: 1px; */
+    /* font-weight: bold; */
+  }
+  .discount-box2{
+    top: 1px;
+    right: 1px;
+    background-color: #ff7a91;
+    font-weight: bolder;
+    /* font-style: italic; */
+    
+  }
+    </style>
+  </head>
+  <body>
+    <div>
+    <center>
+    <h2>YAY! Its's BOGO</h2>
+    <div class="box" id="myBox" ><br><br>
+        <input type="radio" onclick="expandBox()">
+        <label  class="text-size">1 Unit   <span class="discount-box">10% Off</span>
+            <span style="padding-left: 90px;"> $10.00 </span>  </label>
+        <p style="padding-right: 130px;">Standard Price</p>
+       <div>
+        <div id="box1Content" class="content">
+        <select id="colorSelect">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+        <select id="sizeSelect">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      
+      </div>
+        
+      </div>
+      <br>
+      <div class="box1" id="myBox1" > <span style="margin-left: 190px;" class="discount-box2">MOST POPULAR</span><br><br>
+        <input type="radio" onclick="expandBox1()">
+        <label  class="text-size1">2 Unit  <span class="discount-box">20%Off</span><span style="padding-left: 90px;"> $18.00</span> </label>
+    
+      <br>  <div>
+            <div id="box1Content" class="content">
+                <select id="colorSelect">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select id="sizeSelect">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div><br>
+              <div id="box1Content" class="content">
+                <select id="colorSelect">
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="blue">Blue</option>
+                </select>
+                <select id="sizeSelect">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+        </div>
+      </div>
+
+    <br>
+    <div class="box1" id="myBox2" ><br><br>
+      <input type="radio" onclick="expandBox2()">
+      <label  class="text-size2">3 Unit  <span class="discount-box">30% Off</span> <span style="padding-left: 90px;"> $24.00</span> </label>
+      <div>
+        <div id="box1Content" class="content">
+            <select id="colorSelect">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+            <select id="sizeSelect">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div><br>
+          <div id="box1Content" class="content">
+            <select id="colorSelect">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+            <select id="sizeSelect">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div><br>
+          <div id="box1Content" class="content">
+            <select id="colorSelect">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+            <select id="sizeSelect">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+      </div>
+    </div>
+    <div ><h3  style="padding-right: 10px;"> Free Delivery <span class="color" style="padding-left: 90px;">Total:$18.00 USD  </span></h3>
+      </div>
+<div><button class="button-widith">  Add to Cart</button></div>
+    </div>
+
+ </center>
+      <script>
+        function expandBox() {
+          var box = document.getElementById('myBox');
+          box.classList.toggle('expanded');
+        }
+        function expandBox1() {
+          let box = document.getElementById('myBox1');
+          box.classList.toggle('expanded2');
+        }
+        function expandBox2() {
+          let box = document.getElementById('myBox2');
+          box.classList.toggle('expanded3');
+        }
+        </script>
+  </body>
+</html>
